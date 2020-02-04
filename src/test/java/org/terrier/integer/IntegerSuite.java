@@ -52,12 +52,12 @@ import org.terrier.integer.tests.BlockShakSmallMaxBlockSize;
 	TestIntegerCoding.class,
 	TestIntegerCoding2.class,
 	TestNext.class,
-	BasicShak.class,
-	BasicShakFastPFORRecompress.class,
-	BasicShakNullRecompress.class,
-	BasicShakSmallChunk.class,
-	BlockShak.class,
-	BlockShakSmallMaxBlockSize.class	
+	// BasicShak.class,
+	// BasicShakFastPFORRecompress.class,
+	// BasicShakNullRecompress.class,
+	// BasicShakSmallChunk.class,
+	// BlockShak.class,
+	// BlockShakSmallMaxBlockSize.class	
 	
 })
 public class IntegerSuite {}
