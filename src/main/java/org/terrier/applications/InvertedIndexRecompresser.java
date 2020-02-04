@@ -121,7 +121,7 @@ public class InvertedIndexRecompresser extends CLITool {
 
 	@Override
 	public String sourcepackage() {
-		return CLITool.PLATFORM_MODULE;
+		return "integer-compression";
 	}
 
 	@Override
