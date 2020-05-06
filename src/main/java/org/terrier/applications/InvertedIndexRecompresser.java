@@ -100,7 +100,7 @@ public class InvertedIndexRecompresser extends CLITool {
 	public int run(String[] args) {
 		try{
 			IndexOnDisk.setIndexLoadingProfileAsRetrieval(false);
-			IndexOnDisk index = Index.createIndex();
+			IndexOnDisk index = IndexOnDisk.createIndex();
 			recompressInverted(index);	
 			index.close();
 		}catch (Exception e) {

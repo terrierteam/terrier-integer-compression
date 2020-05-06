@@ -37,6 +37,7 @@ import org.terrier.compression.integer.codec.GammaCodec;
 import org.terrier.compression.integer.codec.IntegerCodec;
 import org.terrier.structures.AbstractPostingOutputStream;
 import org.terrier.structures.Index;
+import org.terrier.structures.PropertiesIndex;
 import org.terrier.structures.PostingIndex;
 import org.terrier.structures.indexing.CompressionFactory.CompressionConfiguration;
 import org.terrier.structures.postings.IterablePosting;
@@ -205,7 +206,7 @@ public class IntegerCodecCompressionConfiguration extends
 	}
 	
 	@Override
-	public void writeIndexProperties(Index index, String pointerSourceStreamStructureName)
+	public void writeIndexProperties(PropertiesIndex index, String pointerSourceStreamStructureName)
 	{
 		index.addIndexStructure(
 				this.structureName, 

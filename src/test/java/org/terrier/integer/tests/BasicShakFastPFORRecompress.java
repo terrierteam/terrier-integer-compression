@@ -30,6 +30,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.terrier.compression.integer.codec.LemireFastPFORVBCodec;
 import org.terrier.structures.Index;
+import org.terrier.structures.PropertiesIndex;
 import org.terrier.structures.integer.IntegerCodecCompressionConfiguration;
 import org.terrier.structures.integer.IntegerCodingPostingIndex;
 import org.terrier.tests.BatchEndToEndTest;
@@ -63,7 +64,7 @@ public class BasicShakFastPFORRecompress extends BasicShakNullRecompress {
 		@Override
 		public void checkIndex(BatchEndToEndTest test, Index index)
 				throws Exception {
-			assertTrue(index.getIndexProperty("index.inverted.class", null).contains(IntegerCodingPostingIndex.class.getSimpleName()));
+			assertTrue(((PropertiesIndex) index).getIndexProperty("index.inverted.class", null).contains(IntegerCodingPostingIndex.class.getSimpleName()));
 		}
 		
 		

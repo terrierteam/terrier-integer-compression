@@ -48,6 +48,7 @@ import org.terrier.structures.PostingIndex;
 import org.terrier.structures.PostingIndexInputStream;
 import org.terrier.structures.Skipable;
 import org.terrier.structures.postings.IterablePosting;
+import org.terrier.structures.postings.PostingUtil;
 import org.terrier.structures.postings.integer.BasicIntegerCodingIterablePosting;
 import org.terrier.structures.postings.integer.BlockFieldIntegerCodingIterablePosting;
 import org.terrier.structures.postings.integer.BlockIntegerCodingIterablePosting;
@@ -297,7 +298,7 @@ public class IntegerCodingPostingIndexInputStream implements
 		IterablePosting rtr = null;
 		try {
 			DocumentIndex fixedDi = pointer instanceof DocumentIndexEntry
-					? new PostingIndex.DocidSpecificDocumentIndex(documentIndex, (DocumentIndexEntry)pointer)
+					? new PostingUtil.DocidSpecificDocumentIndex(documentIndex, (DocumentIndexEntry)pointer)
 					: documentIndex;
 			
 			
