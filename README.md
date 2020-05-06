@@ -1,6 +1,6 @@
 # Terrier-Integer-Compression
 
-Since version 4.0, Terrier now supports more modern compression codecs, such as the state-of-the-art PForDelta codec. As of Terrier 5.3, this has been separated into a separate integer compression plugin. **NB**: We do not plan to maintain thus plugin further.
+Since version 4.0, Terrier now supports more modern compression codecs, such as the state-of-the-art PForDelta codec. As of Terrier 5.3, this has been separated into a separate integer compression plugin. **NB**: We do not currently plan to maintain this plugin further.
 
 The integer compression plugin allows the transparent use of compression schemes from [Java\_FastPFOR](https://github.com/lemire/FastPFOR) by Daniel Lemire, and [Kamikaze](http://data.linkedin.com/opensource/kamikaze) by LinkedIn. Indeed, the new integer compression layer defines a new CompressionConfiguration (namely [IntegerCodecCompressionConfiguration](http://terrier.org/docs/v5.2/javadoc/org/terrier/structures/integer/IntegerCodecCompressionConfiguration.html), which can be configured to use various codecs for each compression payload (document ids, term frequencies, field frequencies, term positions):
 
