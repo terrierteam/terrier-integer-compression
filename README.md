@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/terrierteam/terrier-integer-compression.svg)](https://jitpack.io/#terrierteam/terrier-integer-compression)
+
 # Terrier-Integer-Compression
 
 Since version 4.0, Terrier now supports more modern compression codecs, such as the state-of-the-art PForDelta codec. As of Terrier 5.3, this has been separated into a separate integer compression plugin. **NB**: We do not currently plan to maintain this plugin further.
@@ -22,11 +24,11 @@ There is no need to install this package. Terrier can pick it up using the Jitpa
 
 Edit the `terrier.properties` file as follows
 
-    terrier.mvn.coords=com.github.terrier-core:terrier-integer-compression
+    terrier.mvn.coords=com.github.terrier-core:terrier-integer-compression:-SNAPSHOT
 
 Alternatively, you can download and install:
 
-    git clone XXX
+    git clone <repo url>
     cd terrier-integer-compression
     mvn install
 
