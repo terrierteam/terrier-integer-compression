@@ -26,6 +26,12 @@ Edit the `terrier.properties` file as follows
 
     terrier.mvn.coords=com.github.terrierteam:terrier-integer-compression:-SNAPSHOT
 
+You can also use the -P option on the command line. For instance,
+
+    bin/terrier help -P com.github.terrierteam:terrier-integer-compression:5.x-SNAPSHOT
+    
+will show that the "recompress" command is available.
+
 Alternatively, you can download and install:
 
     git clone <repo url>
