@@ -24,7 +24,7 @@ There is no need to install this package. Terrier can pick it up using the Jitpa
 
 Edit the `terrier.properties` file as follows
 
-    terrier.mvn.coords=com.github.terrier-core:terrier-integer-compression:-SNAPSHOT
+    terrier.mvn.coords=com.github.terrierteam:terrier-integer-compression:-SNAPSHOT
 
 Alternatively, you can download and install:
 
